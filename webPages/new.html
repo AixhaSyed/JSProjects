@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" text="text/css" href="style.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style> 
+    h4{
+        font-weight: bold
+    }
+    h2{
+        font-weight: bold
+    }
+    h3{
+       font-weight: bold;
+    }
+</style>
+</head>
+<body>
+   
+  <header>
+  <div class="header-banner">
+    <a href="/" class="logo"></a>
+   
+    <h1>All In One Mart</h1>
+   
+  </div>
+  <div class="clear"></div>
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+      <li><a href="./ABout.html">About Us</a></li>
+      <li><a href="./childrenClothing.html">Children Clothing</a></li>
+       <li><a href="./FemaleClothing.html">Female Clothing</a></li>
+      <li><a href="./MaleClothing.html">Male Clothing</a></li>
+      <li><a href="./ContactUs.html">Contact Us</a></li>
+    <ul>
+  </nav>
+</header>
+ 
+  
+<div class="row">
+  <div class="col-md-4">
+      <h2>Your Design </h2>
+      <div class="radio">
+          <h4>Gender</h4>  
+  <label>
+ 
+      
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Male
+  </label>
+ 
+  <label>
+     
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Female
+  </label>
+  </div>    
+  <h4>Select Size</h4>
+  <input type="text" name="city" list="sizes" class="form-control"  placeholder="Select Size">
+<datalist id="sizes">
+  <option value="XXXS">
+  <option value="XXS">
+   <option value="XS">
+  <option value="Small">
+       <option value="Medium">
+   <option value="Large">
+  <option value="Xlarge">
+       <option value="XXLarge">
+      
+</datalist>
+
+<h4>Shirt Color</h4>
+<input type="text" name="city" class="form-control" list="color" placeholder="Shirt Color">
+<datalist id="color">
+  <option value="Red">
+  <option value="Black">
+      <option value="Yellow">
+  <option value="Peach ">
+      <option value="Sky Blue">
+  <option value="Gray">
+</datalist>
+  
+  <h4>Logo Color</h4>
+<input type="text" name="city" class="form-control" list="color" placeholder="LogoColor">
+<datalist id="color">
+  <option value="Red">
+  <option value="Black">
+      <option value="Yellow">
+  <option value="Peach ">
+      <option value="Sky Blue">
+  <option value="Gray">
+</datalist>
+
+<h3>Preview Design </h3>
+<img src="http://www.sunspel.com/media/catalog/product/cache/3/image/1800x/040ec09b1e35df139433887a97daa66f/4/0/4001_102_5_3.jpg" height="350" width="430"/>
+  <br>
+  <br>
+  <!--<input class="btn btn-default" type="submit" value="Submit">-->
+    <button type="button" class="btn btn-default btn-lg active">Modify</button>
+  
+  
+  
+  </div>
+  <div class="col-md-4">
+      <h2>Order Summary</h2>
+       <div class="form-group">
+    <label for="ForName" class="sr-only">ForName</label>
+    <input type="password" class="form-control" id="ForName" placeholder="Enter Yoyr Name">
+  </div>
+   <div class="form-group">
+    <label for="SurName" class="sr-only">SurNAme</label>
+    <input type="password" class="form-control" id="SurName " placeholder="Enter Your SurName">
+  </div>
+      <textarea class="form-control" rows="2" placeholder="Type your Address 1"></textarea>
+      <br>
+        <textarea class="form-control" rows="2" placeholder="Address 2"></textarea>
+        <div class="form-group">
+            <br>
+    <label for="town" class="sr-only">Town</label>
+    <input type="town" class="form-control" id="town" placeholder="Enter Your Town">
+  </div>
+  <div class="form-group">
+    <label for="country" class="sr-only">Country</label>
+    <input type="country" class="form-control" id="country" placeholder="Enter Your Country">
+  </div>
+  <div class="form-group">
+    <label for="Poscode" class="sr-only">Poscode</label>
+    <input type="Poscode" class="form-control" id="Poscode" placeholder="Enter Your Postcode">
+  </div>
+  <div class="form-group">
+    <label for="Phone Number" class="sr-only">Phone Number </label>
+    <input type="Phone Number" class="form-control" id="iPhone Number" placeholder="Enter Your Phone Number">
+  </div>
+  <div class="form-group">
+    <label for="Email Address" class="sr-only">Email Address</label>
+    <input type="Email Address" class="form-control" id="Email Address" placeholder=" Enter Your Email Address">
+  </div>
+  <!--<input class="btn btn-default" type="submit" value="Cancel Order">-->
+  <button type="button" class="btn btn-default btn-lg active">Cancel Order</button>
+  </div>
+  <div class="col-md-4">
+      <h2>Total Cost Analysis</h2>
+      <textarea class="form-control" rows="22"></textarea>
+      <br>
+      <!--<input class="btn btn-default" type="submit" value="Order Now!">-->
+      <button type="button" class="btn btn-default btn-lg active">Order Now!</button>
+      
+  </div>
+</div>
+</body>
+</html>
+
+
+
+

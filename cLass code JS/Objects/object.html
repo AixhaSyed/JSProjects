@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objects</title>
+</head>
+<body>
+
+
+
+
+
+
+<script>
+
+<!--//how to create an object?-->
+<!--//-->
+<!--//    var plan1={-->
+<!--//        name:"aisha",-->
+<!--//        class:"bsc",-->
+<!--//        age:18,-->
+<!--//              };-->
+<!--//-->
+<!--//      document.write("i studied in "+ plan1.class);-->
+<!--//-->
+<!--////how to add an object outside of the code?-->
+<!--//-->
+<!--//        var plan1={-->
+<!--//            name:"aisha",-->
+<!--//            class:"bsc",-->
+<!--//            age:18,-->
+<!--//        };-->
+<!--//-->
+<!--//       plan1.course="mobile cloud computing"-->
+<!--//-->
+<!--//    alert(plan1.course);-->
+
+<!--//alert any other element?-->
+
+<!--//-->
+<!--//            var plan1={-->
+<!--//                        name:"aisha",-->
+<!--//                        class:"bsc",-->
+<!--//                        age:18,-->
+<!--//                    };-->
+<!--//-->
+<!--// var data=plan1.name;-->
+<!--//    alert(data);-->
+
+
+
+<!--////make any of the element undefined?-->
+<!--//var plan1={-->
+<!--//            name:"aisha",-->
+<!--//            class:"bsc",-->
+<!--//            age:18-->
+<!--//        };-->
+<!--//-->
+<!--//      var data=plan1.job;-->
+<!--//     plan1.job=undefined;-->
+<!--//    alert(data);-->
+
+<!--//how to delete an element?-->
+<!--//-->
+<!--//var plan1={-->
+<!--//            name:"aisha",-->
+<!--//            class:"bsc",-->
+<!--//            age:18-->
+<!--//        };-->
+<!--//-->
+<!--//    delete plan1.age;-->
+<!--//    document.write(plan1.age);-->
+
+
+<!--//is this proporty exist in object?-->
+<!--//-->
+<!--//-->
+<!--//var plan1={-->
+<!--//    name:"aisha",-->
+<!--//    class:"bsc",-->
+<!--//    age:18-->
+<!--//};-->
+<!--//    propertyExists="class"in plan1;-->
+<!--/    document.write(propertyExists);-->
+
+//how to get year when we enrolled in it?
+
+//
+//    var data={
+//        name:"aisha",
+//        age:18,
+//        subject:"physicx",
+//        rollNumber:3476,
+//        yearOfAdmisstion:2013,
+//        anotherYear:this.yearOfAdmisstion,
+//        getEnrolled: function() {
+//            var today = new Date();
+//            var newMonth = today.getFullYear();
+//            return newMonth - data.yearOfAdmisstion;
+//           return newMonth - this.yearOfAdmisstion;
+//        }
+//
+//    };
+//    console.log(data.getEnrolled);
+//
+//
+//
+//    var student1={
+//        name: "aisha",
+//        age: 18,
+//        subject :"computers",
+//        admisstionYear:2015,
+//        enrolledYear : function(){
+//            var today= new Date();
+//            var newMonth=today.getFullYear();
+//            return newMonth-student1.admisstionYear*4;
+//        }
+//    };
+//document.write(student1.enrolledYear());
+
+
+//
+//var student3={
+//    name:"aisha",
+//    age:16,
+//    dateOfBirth:1997,
+//    yearsOfBorn :function() {
+//        var today = new Date();
+//        var month = today.getFullYear();
+//        return month - student3.dateOfBirth
+//    }
+//};
+//document.write(student3.yearsOfBorn());
+
+
+//
+//    var student2 = {
+//        name            : "Sami",
+//        age             : 21,
+//        rollNumber      : "B456",
+//        admissionYear   : 2014,
+//        yearDuplicate   : this.admissionYear,
+//        getYears        : function (){
+//            var today       = new Date();
+//            var currentYear = today.getFullYear();
+//            //return currentYear - student2.admissionYear;
+//            return currentYear - this.admissionYear;
+//        }
+//    };
+//
+//
+//
+//    console.log(student2.getYears());
+
+
+
+//chapter 71 been leave?
+
+
+//object Construtor method
+
+//
+//    function data(name, age, study, course, admisstionYear){
+//        this.naam =name;
+//        this.umar =age;
+//        this.parhae =study;
+//        this.shortCorxe =course;
+//        this.enrolledYear =admisstionYear;
+//    }
+//
+//
+//    var data1 =new data("aisha",18,"bsc","cloud computing",2014);
+//
+//
+//
+//    alert(data1.naam);
+//
+//
+//
+//function Plan(naam, paisay, samaan, safhat){
+//    this.name   = naam;
+//    this.price  = paisay;
+//    this.data   = samaan;
+//    this.pages  = safhat;
+//}
+//
+//var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+//var plan2 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+//
+//            alert("values are same"+plan1.name);
+
+//mere coding ke bewakofi ke inteha :D :D
+
+//    function shopping(dolmen,stylo,ego,kashees,pariZad){
+//        this.dress = dolmen;
+//        this.pumps = stylo;
+//        this.shirt = ego;
+//        this.makeOver = kashees;
+//        this.partyWear = pariZad;
+//    }
+//
+//
+//    var shoppingList = new shopping("dress","shoes","casualShirts","haircut","designerPiece");
+//
+//    var shoppingList1 = new shopping("dress","shoes","casualShirts","haircut","designerPiece");
+//
+//    if(shoppingList.shirt==shoppingList1.dress){
+//        alert("this one's is correct");
+//    }
+//    else{
+//        alert("this is not a correct choice");
+//    }
+//
+//
+//    document.write(shoppingList.pumps);
+//    document.write("<br>");
+//    document.write(shoppingList.makeOver);
+
+
+//
+//
+//
+//    function Plan(naam, paisay, samaan, safhat, saal){
+//        this.name       = naam;
+//        this.price      = paisay;
+//        this.data       = samaan;
+//        this.pages      = safhat;
+//        this.regYear    = saal;
+//        this.category = "Broadband";
+//
+//    }
+//    var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+//
+//Plan.prototype.category = "Broadband";
+//alert(plan.prototype.category);
+
+//        Plan.prototype.getYears   = function (abc){
+//            alert(abc);
+//            var today       = new Date();
+//            var currentYear = today.getFullYear();
+//            return currentYear - this.regYear;
+//        };
+//
+//    alert(plan.prototype.catagory);
+
+
+////proporty Exixt
+//
+//    var data={
+//        name:"aisha",
+//        class:7,
+//        subject:"computers"
+//    };
+//    data.prototype.uni="ssuet";
+//alert(data.uni);
+// var propExixts="name" in data;
+//    alert(propExixts);
+// var propExixts="rooms" in data;
+//    alert(propExixts);// it alwayx return true or falxe;
+
+
+// got the proporty of an element:
+
+//
+//      var data={
+//          name:"aisha",
+//          class:"bsc",
+//          course:"mobile cloud computing",
+//          yearOfAdmisstion:2013,
+//};
+// var gotTheProporty="course" in data;
+//    alert(gotTheProporty)
+
+//
+//      var data={
+//          name:"aisha",
+//          class:"bsc",
+//          course:"mobile cloud computing",
+//          yearOfAdmisstion:2013,};
+//
+//    var gotTheProporty="location" in data;
+//    alert(gotTheProporty);
+
+
+
+
+
+
+var listOfProperties = [];
+ for (var prop in plan1) {
+     if (plan1.hasOwnProperty(prop)) {
+        listOfProperties.push(prop);
+         }
+     }
+
+
+
+
+
+
+alert(listOfProperties);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First</title>
+    <link rel="stylesheet" text="text/css" href="style.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        aside img { max-width: 100%; height: 200px; margin-left: 35px}
+        aside { width: 240px; float: left;
+        margin-top: -65px }
+        #hello{
+         
+          margin-top: -65px;
+          margin-left: 5px;
+          
+          float:  left
+        }
+        
+        
+        
+          #theVideo{
+        display:block;
+        position:absolute;
+        left: 200px;
+        top: 320px;
+        border: 2px solid black;
+        border-radius: 20px; 
+        /*margin-top: 290px; */
+        margin-left: 450px;
+        float : right;
+        
+    }   
+    */
+    #rotateVideo:hover
+    {
+        border:2px solid green;
+        cursor: pointer;                
+     }
+        
+        
+        </style>
+   
+    <header>
+  <div class="header-banner">
+    <a href="/" class="logo"></a>
+   
+    <h1>All In One Mart</h1>
+   
+  </div>
+  <div class="clear"></div>
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+      <li><a href="./ABout.html">About Us</a></li>
+      <li><a href="./childrenClothing.html">Children Clothing</a></li>
+       <li><a href="./FemaleClothing.html">Female Clothing</a></li>
+      <li><a href="./MaleClothing.html">Male Clothing</a></li>
+      <li><a href="./ContactUs.html">Contact Us</a></li>
+    <ul>
+  </nav>
+</header>
+     
+
+
+    
+    <aside>
+    <img src="http://www.dhresource.com/260x260s/f2-albu-g3-M01-0C-A1-rBVaHVaVvSKASaVOAAGhcKWWVXA187.jpg/formal-office-blouses-with-bow-ribbon-shirt.jpg">
+    <img src="https://images-eu.ssl-images-amazon.com/images/I/419Owusm4hL._AC_UL260_SR200,260_.jpg">
+     
+    
+    
+    
+  </aside>
+    <aside id="hello">
+    <img src="http://g03.a.alicdn.com/kf/HTB1ko7BNXXXXXavaXXXq6xXFXXXN/2016-New-Baby-Kids-Boys-Tuxedo-Suit-Gentleman-Suit-long-sleeve-Shirt-Waistcoat-Tie-Pants-Formal.jpg_220x220.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1761/5239/products/product-image-180142013.jpg?v=1487875420">
+     
+    
+    
+    
+  </aside>
+    
+    <video src="http://ie.microsoft.com/testdrive/ieblog/2011/nov/pp4_blog_demo.mp4" id="theVideo" controls >
+      This browser or mode doesn't support HTML5 video.
+    </video>
+
+   
+    <script>
+        $(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+       $('nav').addClass('fixed-header');
+    }
+    else {
+       $('nav').removeClass('fixed-header');
+    }
+});
+</script>
+    
+  
+</body>
+</html>

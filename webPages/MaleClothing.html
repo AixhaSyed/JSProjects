@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First</title>
+    <link rel="stylesheet" text="text/css" href="style.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        aside img { max-width: 100%; height: 200px; margin-left: 30px}
+        aside { width: 240px; float: right;
+        margin-top: -100px }
+      .flex-container {
+  flex-direction: row;
+  display: -webkit-flex;
+  display: inline-flex;
+
+  width: 100%;
+  align-content: center;
+  flex-flow: row wrap;
+  margin-top: -40px;
+  
+}
+.flex-item {
+  width: 23%;
+  height: 160px;
+  margin: 10px;
+  order: 1;
+  border-radius: 3px;
+  padding: 0 10px 40px 10px;
+  margin-left: 90px;
+}
+
+    
+     img{
+  width: 320px;
+  height: 200px;
+  margin: 10px;
+  order: 1;
+  border-radius: 3px;
+  padding: 0 10px 40px 10px;
+  margin-left: -13px;
+}
+   
+    
+        
+        </style>
+    
+    <header>
+  <div class="header-banner">
+    <a href="/" class="logo"></a>
+   
+    <h1>All In One Mart</h1>
+   
+  </div>
+  <div class="clear"></div>
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+      <li><a href="./ABout.html">About Us</a></li>
+      <li><a href="./childrenClothing.html">Children Clothing</a></li>
+       <li><a href="./FemaleClothing.html">Female Clothing</a></li>
+      <li><a href="./MaleClothing.html">Male Clothing</a></li>
+     <li><a href="./ContactUs.html">Contact Us</a></li>
+    <ul>
+  </nav>
+</header>
+     
+
+<div class="flex-container">
+  <div class="flex-item colour-1">
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/7f/5b/41/7f5b41d4fd37d4f48f763abcc0d3223e.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-2">
+    <img src="https://static.kaymu.pk/p/other-8428-3192902-1-product.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-3">
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/c0/f7/a1/c0f7a1742992809e38a7c99fd1b37fc7.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-4">
+    <img src="https://aletere.com/wp-content/uploads/2017/04/Latest-Men-Fashion-2017-Collection-Formal-Dresses-Summer-Pant-Shirt-Pakistan-Fashion-Style-Trend-Trending-Article-9.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-5">
+    <img src="https://static.kaymu.pk/p/other-8425-4292902-1-product.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-6">
+    <img src="https://weddingpakistani.com/wp-content/uploads/2015/08/Jeans.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-7">
+    <img src="https://1.bp.blogspot.com/-oOmSg5jzX7o/UWvDneS10sI/AAAAAAAACIw/yalUuvO2atQ/s1600/Latest-shirts-for-boys-2013.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-8">
+    <img src="https://static.kaymu.pk/p/other-7584-7945352-1-product.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-9">
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/04/c2/0a/04c20a78abfbbc97f684a7a50c47095d.jpg" alt="Paris">
+  </div>
+  
+</div>
+    <script>
+        $(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+       $('nav').addClass('fixed-header');
+    }
+    else {
+       $('nav').removeClass('fixed-header');
+    }
+});
+</script>
+    
+  
+</body>
+</html>

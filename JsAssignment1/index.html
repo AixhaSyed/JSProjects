@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP concept Clearing</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>-->
+<link href='https://fonts.googleapis.com/css?family=Jacques Francois Shadow' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lekton' rel='stylesheet'>
+    <style>
+        body{
+            background-color: hsl(50, 60%, 75%);
+            padding: 20px;
+        }
+            h1 {
+            /*background-image: url("images/b1.jpg");*/
+            /*background-color: #A52A2A;            */
+            font-size: 90px; 
+            text-align: center ;
+            font-family: 'Jacques Francois Shadow';
+            /*font-size: 22px;*/
+            /*font-family: "myFirstFont", serif;*/
+            /*font-weight:  bold ;*/
+            text-shadow: -1px -1px 0 #000, 
+                          1px -1px 0 #000,
+                          -1px 1px 0 #000,
+                           1px 1px 0 #000; 
+           color      : #A52A2A ;      
+           background-origin: border-box ;      
+           margin-top: 10px ;
+           margin-bottom: 10px;   
+           /*border: 6px solid  #555D50  ; */
+           /*border-width: 1px  ;*/
+           /*font-family: font|initial|inherit;*/
+             /*font-family: "Times New Roman", Times,red serifs ;*/
+    }
+    tr{
+        background-color: #A52A2A;
+        font-size: 13px;
+        color: hsl(50, 60%, 75%);
+       border-style: groove;
+       border-color: hsl(50, 60%, 75%);
+        font-family: 'Lekton';
+       
+    }
+    th{
+        background-color: #A52A2A;
+        font-size: 25px;
+         font-family: 'Jacques Francois Shadow';
+        
+    }
+       
+    </style>
+</head>
+<body onload="insertData()" >
+
+<!--<h1 class=" container well" align="center">Employee's Diary</h1>
+-->
+
+<h1 align="center">Employee's Diary</h1>
+<div class="container ">
+    <table id="myTable" class="table table-responsive table-hover">
+        
+
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Company</th>
+            <th>Address</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Remove</th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

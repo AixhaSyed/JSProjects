@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First</title>
+    <link rel="stylesheet" text="text/css" href="style.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        aside img { max-width: 100%; height: 200px; margin-left: 30px}
+        aside { width: 240px; float: right;
+        margin-top: -100px }
+      .flex-container {
+  flex-direction: row;
+  display: -webkit-flex;
+  display: inline-flex;
+ 
+  width: 100%;
+  align-content: center;
+  flex-flow: row wrap;
+  margin-top: -40px;
+  
+}
+img{
+  width: 320px;
+  height: 200px;
+  margin: 10px;
+  order: 1;
+  border-radius: 3px;
+  padding: 0 10px 40px 10px;
+  margin-left: -13px;
+}
+.flex-item {
+  width: 23%;
+  height: 160px;
+  margin: 10px;
+  order: 1;
+  border-radius: 3px;
+  padding: 0 10px 40px 10px;
+  margin-left: 90px;
+  
+}
+
+    
+        
+        </style>
+    
+    <header>
+  <div class="header-banner">
+    <a href="/" class="logo"></a>
+   
+    <h1>All In One Mart</h1>
+   
+  </div>
+  <div class="clear"></div>
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+      <li><a href="./ABout.html">About Us</a></li>
+      <li><a href="./childrenClothing.html">Children Clothing</a></li>
+       <li><a href="./FemaleClothing.html">Female Clothing</a></li>
+      <li><a href="./MaleClothing.html">Male Clothing</a></li>
+      <li><a href="./ContactUs.html">Contact Us</a></li>
+    <ul>
+  </nav>
+</header>
+     
+
+<div class="flex-container">
+  <div class="flex-item colour-1">
+    <img src="https://ae01.alicdn.com/kf/HTB1zwvpOpXXXXcUaFXXq6xXFXXXX/2017-Baby-embroidered-white-font-b-formal-b-font-font-b-dress-b-font-flower-font.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-2">
+     <img src="https://style.pk/wp-content/uploads/2015/12/Kids-Fancy-dresses-2016-in-Pakistan-multicolor.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-3">
+    <img src="https://s-media-cache-ak0.pinimg.com/236x/2e/93/c9/2e93c9be13d557c7721990b14d107d01.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-4">
+    <img src="https://ae01.alicdn.com/kf/HTB1jo7CIXXXXXaDaXXXq6xXFXXX2/2017-New-Baby-Boy-Suit-Children-Summer-Casual-Boys-Clothes-Suitable-For-T-Shirt-Top-Shorts.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-5">
+    <img src="https://ae01.alicdn.com/kf/HTB1x5COJVXXXXcxXFXXq6xXFXXXT/-font-b-Baby-b-font-font-b-Boys-b-font-Clothes-newborn-months-font-b.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-6">
+    <img src="https://ae01.alicdn.com/kf/HTB1YalCOFXXXXc3XVXXq6xXFXXXs/Enbaba-baby-font-b-boys-b-font-clothes-spring-2017-font-b-fashion-b-font-brand.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-7">
+    <img src="https://ae01.alicdn.com/kf/HTB1JihlLVXXXXaOXpXXq6xXFXXXg/Wedding-font-b-dresses-b-font-for-children-new-spring-lace-flower-kids-font-b-formal.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-8">
+    <img src="https://sc01.alicdn.com/kf/HTB1FPnIGVXXXXbVXpXXq6xXFXXXJ/200201162/HTB1FPnIGVXXXXbVXpXXq6xXFXXXJ.jpg" alt="Paris">
+  </div>
+  <div class="flex-item colour-9">
+    <img src="https://style.pk/wp-content/uploads/2015/12/Kids-Fancy-dresses-2016-in-Pakistan-wedding.jpg" alt="Paris">
+  </div>
+  
+  
+</div>
+    <script>
+        $(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+       $('nav').addClass('fixed-header');
+    }
+    else {
+       $('nav').removeClass('fixed-header');
+    }
+});
+</script>
+    
+  
+</body>
+</html>
